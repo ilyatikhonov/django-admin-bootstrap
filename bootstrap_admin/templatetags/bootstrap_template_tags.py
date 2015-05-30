@@ -144,4 +144,4 @@ def user_admin_urlname(value, arg):
     Providing a link to change the user
     (for working better with auth custom user)
     '''
-    return 'admin:%s_%s_%s' % (value._meta.app_label, value._meta.module_name, arg)
+    return 'admin:%s_%s_%s' % (value._meta.app_label, value._meta.model_name, arg)
